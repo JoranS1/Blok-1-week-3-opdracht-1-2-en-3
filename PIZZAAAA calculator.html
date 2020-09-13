@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Effe wachten Pizzaaa</title>
+	</head>
+	<body>
+		<h1> De volgende bestelling is geplaatst</h1>
+		<b> Aantal bestelde Kleine Pizza's (3,50): </b>
+		<p id="Totaalsmall"> </p>
+		<b> Aantal bestelde Medium Pizza's (5,00): </b>
+		<p id="Totaalmed"> </p>
+		<b> Aantal bestelde Grote Pizza's (7,00): </b>
+		<p id="Totaallarge"> </p>
+		<b> Totaal Prijs Pizza's: </b>
+		<p id="Totaalprijs"> </p>
+	<script>
+		// Joran Schrievers Pizza Calculator
+	var SmallPizza = prompt ("Hoeveel kleine pizza's wilt u ze kosten 3,50"); //Hier kan de klant aangeven hoeveel kleine pizza's hij of zij wilt
+	var MediumPizza = prompt("Hoeveel medium pizza's wilt u ze kosten 5"); // Hier kan de klant aangeven hoeveel medium pizza's hij of zij wilt
+	var LargePizza = prompt ("Hoeveel grote pizza's wilt u ze kosten 7"); // Hier kan de klant aangeven hoeveel grote pizzaa's hij of zij wilt
+
+	const SMALLPIZZAPRICE =  3.50;
+	const MEDIUMPIZZAPRICE = 5;
+	const LARGEPIZZAPRICE = 7;
+	
+
+	var SmallPizzaTotalPrice =  SMALLPIZZAPRICE * SmallPizza; // Hier wordt de totaalprijs van de kleine pizza's berekend
+	var MediumPizzaTotalPrice = MEDIUMPIZZAPRICE * MediumPizza; // Hier wordt de totaalprijs van de medium pizza's berekent
+	var LargePizzaTotalPrice = LARGEPIZZAPRICE * LargePizza; // Hier wordt de totaalprijs van de medium pizza's berekent
+	var PizzaTotalPrice = SmallPizzaTotalPrice + MediumPizzaTotalPrice + LargePizzaTotalPrice; // Hier wordt de totaalprijs van alle pizza's berekend
+
+	document.getElementById("Totaalsmall").innerHTML = SmallPizza;
+	document.getElementById("Totaalmed").innerHTML = MediumPizza;
+	document.getElementById("Totaallarge").innerHTML = LargePizza;
+	document.getElementById("Totaalprijs").innerHTML = PizzaTotalPrice;
+	</script>
+	</body>
+	</html>
